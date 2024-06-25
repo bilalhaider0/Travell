@@ -1,0 +1,108 @@
+
+/*contact*/
+.contact-container{
+    width: 85%;
+    margin: 10px auto 5rem auto;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .contact-container .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-container .contact-content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+
+  
+.contact-container .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-container .contact-content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  
+  .contact-content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .contact-content .left-side .details i{
+    font-size: 32px;
+    color: var(--orange);
+    margin-bottom: 10px;
+  }
+  .contact-content .left-side .details .topic{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .contact-container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .contact-content .right-side .topic-text{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--orange);
+  }
+  .contact-content .right-side p{
+    font-size: 1.2rem;
+  }
+  
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .right-side .message-box{
+    min-height: 70px;
+  }
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background:var(--orange);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  

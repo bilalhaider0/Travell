@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+/*login*/
+.wrapper{
+  overflow: hidden;
+  max-width: 390px;
+  background: #fff;
+  padding: 20px;
+  margin: 15rem auto 7rem auto;
+  border-radius: 5px;
+  background: #F5EFEF;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  border-radius: 5px;
+
+	background: linear-gradient(to right, rgba(255, 165, 0, 0.8), rgba(255, 165, 0, 0.9));
+  transition: all 0.6s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#signup:checked ~ .slider-tab{
+  left: 50%;
+}
+#signup:checked ~ label.login{
+  color: #000;
+  
+}
+#login:checked ~ label.signup{
+  color: #000;
+  
+}
+.form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s ease;
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+
+
+.singlerow input[type="text"] {
+  width: 170px; 
+  padding: 15px; 
+  margin-bottom: 2px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-size: 13px;
+  border-bottom-width: 2px; 
+}
+
+
+
+
+
+.form-inner form .field input:focus{
+  border-color: #333;
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: #0e45dd;
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+.buttn{
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 3rem;
+  background-color: var(--orange);
+  padding: .7rem 1rem;
+  border: .2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+.buttn a{
+  color: #fff;
+}
+
+
+/*media queries*/
+@media(max-width:991px){
+  .contactus{
+    padding: 20px;
+  }
+  .box1{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "form" "info" "map";
+  }
+  .map{
+    min-height: 300px;
+  }
+  .formbox .row50{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .inputbox{
+    width: 100%;
+  }
+  .contact{
+    padding: 30px;
+  }
+  .map{
+    min-height: 300px;
+    padding: 0;
+  }
+
+}
+@media(max-width:570px){
+  .form{
+    width: 150%;
+  }
+  .info{
+    display: none;
+  }
+  .map{
+    display: none;
+  }
+}
+@media(max-width:475px) {
+  .form{
+    width:140%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading{
+    padding: 0px 20px;
+  }
+  .heading h1{
+    font-size: 36px;
+  }
+  .heading p{
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+}
